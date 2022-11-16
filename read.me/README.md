@@ -15,3 +15,5 @@ Follow the prompts to make a new passwords and select the chracters you would li
 New Text
 
 I looked back at my code an tried to make things unique by using pre randomized functions instead of arrays, but I hit roadblocks. I then decided to try to backtrack and revamp my prior code, but I hit another roadblock. I would appreciate some input on what I did wrong.
+
+I also had a very hard time when it came to the for loops and min max methods.
