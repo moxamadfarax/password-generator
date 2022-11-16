@@ -11,3 +11,7 @@ I learned how to make a random number generator and learned more about for loops
 Follow the prompts to make a new passwords and select the chracters you would like to include.
 
 ![Getting Started](images/passgen.png)
+
+New Text
+
+I looked back at my code an tried to make things unique by using pre randomized functions instead of arrays, but I hit roadblocks. I then decided to try to backtrack and revamp my prior code, but I hit another roadblock. I would appreciate some input on what I did wrong.

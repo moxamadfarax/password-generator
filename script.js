@@ -7,7 +7,7 @@ function randomNum(min, max){
   min = 0
  }
  var rand = Math.random()
- return Math.floor(min*(1 - rand) + rand*max)
+ return Math.floor(min*(0 - rand) + rand*max)
 }
 
 function randomItem(list) {
@@ -73,16 +73,20 @@ function generatePassword(){
     selectedPrompts.push(symbolGen)
   
   }
+  if(selectedPrompts===0 ){
+    selectedPrompts.push(symbolGen)
+
+  }
   
    var generatePassword= ""
 
   for(var i = 0; i < charLength; i++ ) {
     var randomList = randomItem(selectedPrompts)
     var randomChar = randomItem(randomList)
-    console.log(randomChar)
-    
+    generatePassword += randomChar
+     
   }
-    
+    console.log(generatePassword)
   }
   
   function writePassword() {
