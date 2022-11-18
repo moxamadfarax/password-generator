@@ -1,18 +1,6 @@
 //Making a variable to call the id "generate" from the html
 var generateBtn = document.querySelector("#generate");
 
-function randomNum(min, max){
- if (!max) {
-  max = min
-  min = 0
- }
- var rand = Math.random()
- return Math.floor(min*(0 - rand) + rand*max)
-}
-
-function randomItem(list) {
-  return list[randomNum(list.length)]
-}
 
 function generatePassword(){
   //Creating my first prompt and and calling it "initprompt."
@@ -40,10 +28,10 @@ function generatePassword(){
   var lowerPrompt = window.confirm("Would you like lowercase letters in your password?");
   var symbolPrompt = window.confirm("Would you like symbols in your password?");
   
-  var integerGen = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
   var lowerGen = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
-  var upperGen = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
-  var symbolGen = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",];
+  var upperGen = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",];
+  var integerGen = ["1","2","3","4","5","6","7","8","9","0"];
+  var symbolGen = ["!","@","#","$","%","^","&","*","(",")","-","_","+","="];
   
   selectedPrompts = []
   
@@ -81,9 +69,7 @@ function generatePassword(){
    var generatePassword= ""
 
   for(var i = 0; i < charLength; i++ ) {
-    var randomList = randomItem(selectedPrompts)
-    var randomChar = randomItem(randomList)
-    generatePassword += randomChar
+   
      
   }
     console.log(generatePassword)
